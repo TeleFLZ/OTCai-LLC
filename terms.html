@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OTC AI • Terms of Service</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>OTC AI • Terms of Service</title>
 
 <style>
 
@@ -13,110 +12,126 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Inter,sans-serif;
+font-family:Inter,Arial,sans-serif;
 }
 
 body{
 
-background:
-radial-gradient(circle at top,#312e81 0%,transparent 35%),
-#020617;
+background:linear-gradient(135deg,#09090b,#111827,#0f172a);
 
-color:#fff;
+color:white;
 
-}
-
-.container{
-
-max-width:1000px;
-
-margin:auto;
-
-padding:80px 25px;
+min-height:100vh;
 
 }
 
-.card{
+header{
 
-background:rgba(255,255,255,.05);
+padding:70px 20px;
 
-backdrop-filter:blur(25px);
-
-border:1px solid rgba(255,255,255,.08);
-
-padding:45px;
-
-border-radius:28px;
-
-box-shadow:0 0 40px rgba(124,58,237,.15);
+text-align:center;
 
 }
 
 h1{
 
-font-size:48px;
+font-size:55px;
 
 margin-bottom:15px;
 
-background:linear-gradient(90deg,#ffffff,#8b5cf6);
+}
 
--webkit-background-clip:text;
+p{
 
--webkit-text-fill-color:transparent;
+color:#cbd5e1;
+
+}
+
+.lang{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-top:25px;
+
+flex-wrap:wrap;
+
+}
+
+.lang button{
+
+background:#1f2937;
+
+color:white;
+
+border:none;
+
+padding:12px 24px;
+
+border-radius:15px;
+
+cursor:pointer;
+
+transition:.25s;
+
+font-size:15px;
+
+}
+
+.lang button:hover{
+
+background:#2563eb;
+
+transform:translateY(-3px);
+
+}
+
+.card{
+
+max-width:950px;
+
+margin:auto;
+
+padding:40px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(18px);
+
+border-radius:25px;
+
+margin-bottom:40px;
 
 }
 
 h2{
 
-margin-top:40px;
+margin-top:35px;
 
 margin-bottom:15px;
 
-color:#a78bfa;
+color:#60a5fa;
 
 }
 
-p,li{
+li{
 
-color:#cbd5e1;
+margin:12px 0;
 
-line-height:1.9;
+color:#d1d5db;
 
-}
-
-ul{
-
-padding-left:20px;
-
-}
-
-.language{
-
-float:right;
-
-margin-top:-10px;
-
-}
-
-select{
-
-background:#111827;
-
-color:white;
-
-padding:10px;
-
-border-radius:12px;
-
-border:1px solid rgba(255,255,255,.15);
+line-height:1.7;
 
 }
 
 footer{
 
-margin-top:50px;
-
 text-align:center;
+
+padding:40px;
 
 color:#94a3b8;
 
@@ -124,63 +139,53 @@ color:#94a3b8;
 
 </style>
 
-<script>
-
-function changeLang(){
-
-const lang=document.getElementById("lang").value;
-
-if(lang==="ru")
-location.href="terms_ru.html";
-
-if(lang==="en")
-location.href="terms.html";
-
-}
-
-</script>
-
 </head>
 
 <body>
 
-<div class="container">
+<header>
 
-<div class="card">
+<h1>OTC AI</h1>
 
-<div class="language">
+<p>Terms of Service</p>
 
-<select id="lang" onchange="changeLang()">
+<div class="lang">
 
-<option value="en">🇺🇸 English</option>
+<button onclick="setLang('en')">🇺🇸 English</button>
 
-<option value="ru">🇷🇺 Русский</option>
+<button onclick="setLang('ru')">🇷🇺 Русский</button>
 
-</select>
+<button onclick="setLang('de')">🇩🇪 Deutsch</button>
+
+<button onclick="setLang('fr')">🇫🇷 Français</button>
+
+<button onclick="setLang('es')">🇪🇸 Español</button>
 
 </div>
 
-<h1>Terms of Service</h1>
+</header>
 
-<p><strong>Effective Date:</strong> July 2026</p>
+<div class="card" id="content">
 
-<p>
+</div>
 
-Welcome to OTC AI.
+<footer>
 
-By using OTC AI you agree to these Terms of Service. If you do not agree with these terms, please stop using the service.
+© 2026 OTC AI
 
-</p>
+</footer>
 
-<h2>Use of the Service</h2>
+<script>
 
-<p>
+const pages={
 
-OTC AI provides AI-powered conversations, automation, coding assistance, knowledge generation, translation and other intelligent features. The service is provided "as is" without guarantees of uninterrupted availability.
+en:`
 
-</p>
+<h2>Welcome</h2>
 
-<h2>User Responsibilities</h2>
+<p>By using OTC AI, you agree to these Terms of Service.</p>
+
+<h2>Using OTC AI</h2>
 
 <ul>
 
@@ -188,11 +193,7 @@ OTC AI provides AI-powered conversations, automation, coding assistance, knowled
 
 <li>Do not use the service for illegal activities.</li>
 
-<li>Do not attempt to exploit vulnerabilities.</li>
-
-<li>Do not abuse or overload the service.</li>
-
-<li>You are responsible for any content you submit.</li>
+<li>Do not attempt to abuse or overload the AI.</li>
 
 </ul>
 
@@ -200,41 +201,33 @@ OTC AI provides AI-powered conversations, automation, coding assistance, knowled
 
 <p>
 
-Artificial intelligence may occasionally produce inaccurate, incomplete or unexpected responses. Users should independently verify important information before relying on it.
+AI-generated responses may be inaccurate or incomplete.
+
+Always verify important information independently.
 
 </p>
 
-<h2>Server Configuration</h2>
+<h2>Server Customization</h2>
 
 <p>
 
-OTC AI supports different communities and servers.
+OTC AI can be customized for every Discord server.
 
-Every Discord server is unique, therefore the <strong>server owner or administrators are responsible for configuring the AI</strong> to match the needs, rules and style of their own community.
+Each server owner is responsible for configuring prompts,
 
-OTC AI does not automatically customize itself for every server.
+behavior, moderation rules, personalities and permissions.
+
+OTC AI does not automatically control how a server is configured.
 
 </p>
 
-<h2>Language Support</h2>
+<h2>Languages</h2>
 
 <p>
 
 OTC AI supports multiple languages.
 
-Users may communicate in their preferred language whenever available.
-
-Future updates may expand language support.
-
-</p>
-
-<h2>Availability</h2>
-
-<p>
-
-The service may be temporarily unavailable due to maintenance, updates or technical issues.
-
-Features may change without prior notice.
+Responses depend on the language selected by the user or server settings.
 
 </p>
 
@@ -242,17 +235,7 @@ Features may change without prior notice.
 
 <p>
 
-Use of OTC AI is also governed by the Privacy Policy.
-
-By using the service you acknowledge that limited information may be processed in order to provide AI responses.
-
-</p>
-
-<h2>Limitation of Liability</h2>
-
-<p>
-
-OTC AI and its developers are not liable for damages resulting from use of the service, including indirect, incidental or consequential damages.
+Messages may be processed to generate responses and improve reliability.
 
 </p>
 
@@ -260,45 +243,92 @@ OTC AI and its developers are not liable for damages resulting from use of the s
 
 <p>
 
-Access to OTC AI may be limited or terminated if these Terms are violated or if malicious activity is detected.
+Users who abuse OTC AI may lose access without notice.
 
 </p>
 
-<h2>Changes</h2>
+`,
+
+ru:`
+
+<h2>Добро пожаловать</h2>
+
+<p>Используя OTC AI, вы соглашаетесь с настоящими условиями использования.</p>
+
+<h2>Использование</h2>
+
+<ul>
+
+<li>Используйте ИИ ответственно.</li>
+
+<li>Не используйте сервис в незаконных целях.</li>
+
+<li>Не пытайтесь нарушить работу ИИ.</li>
+
+</ul>
+
+<h2>Ответы ИИ</h2>
 
 <p>
 
-These Terms may be updated periodically.
+Ответы могут содержать ошибки.
 
-Continued use of OTC AI after changes means you accept the revised Terms.
+Проверяйте важную информацию самостоятельно.
 
 </p>
 
-<h2>Contact</h2>
+<h2>Настройка ИИ</h2>
 
 <p>
 
-Developer:<br>
+Каждый владелец Discord-сервера самостоятельно настраивает OTC AI
 
-<strong>OTC AI</strong>
+под свой сервер, участников и правила.
 
-<br><br>
-
-Email:<br>
-
-<strong>otc.ai.contact@gmail.com</strong>
+Все параметры поведения, инструкции и промпты задаются владельцем сервера.
 
 </p>
 
-</div>
+<h2>Языки</h2>
 
-<footer>
+<p>
 
-© 2026 OTC AI. All Rights Reserved.
+OTC AI поддерживает несколько языков.
 
-</footer>
+Ответы формируются на выбранном языке пользователя.
 
-</div>
+</p>
+
+<h2>Конфиденциальность</h2>
+
+<p>
+
+Сообщения могут временно обрабатываться для генерации ответов.
+
+</p>
+
+<h2>Блокировка</h2>
+
+<p>
+
+За злоупотребление сервисом доступ может быть ограничен.
+
+</p>
+
+`
+
+};
+
+function setLang(lang){
+
+document.getElementById("content").innerHTML=pages[lang]||pages.en;
+
+}
+
+setLang("en");
+
+</script>
 
 </body>
+
 </html>
