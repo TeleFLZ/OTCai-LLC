@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OTC AI • Terms of Service</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,sans-serif;
+}
+
+body{
+
+background:
+radial-gradient(circle at top,#312e81 0%,transparent 35%),
+#020617;
+
+color:#fff;
+
+}
+
+.container{
+
+max-width:1000px;
+
+margin:auto;
+
+padding:80px 25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(25px);
+
+border:1px solid rgba(255,255,255,.08);
+
+padding:45px;
+
+border-radius:28px;
+
+box-shadow:0 0 40px rgba(124,58,237,.15);
+
+}
+
+h1{
+
+font-size:48px;
+
+margin-bottom:15px;
+
+background:linear-gradient(90deg,#ffffff,#8b5cf6);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+h2{
+
+margin-top:40px;
+
+margin-bottom:15px;
+
+color:#a78bfa;
+
+}
+
+p,li{
+
+color:#cbd5e1;
+
+line-height:1.9;
+
+}
+
+ul{
+
+padding-left:20px;
+
+}
+
+.language{
+
+float:right;
+
+margin-top:-10px;
+
+}
+
+select{
+
+background:#111827;
+
+color:white;
+
+padding:10px;
+
+border-radius:12px;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+footer{
+
+margin-top:50px;
+
+text-align:center;
+
+color:#94a3b8;
+
+}
+
+</style>
+
+<script>
+
+function changeLang(){
+
+const lang=document.getElementById("lang").value;
+
+if(lang==="ru")
+location.href="terms_ru.html";
+
+if(lang==="en")
+location.href="terms.html";
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="language">
+
+<select id="lang" onchange="changeLang()">
+
+<option value="en">🇺🇸 English</option>
+
+<option value="ru">🇷🇺 Русский</option>
+
+</select>
+
+</div>
+
+<h1>Terms of Service</h1>
+
+<p><strong>Effective Date:</strong> July 2026</p>
+
+<p>
+
+Welcome to OTC AI.
+
+By using OTC AI you agree to these Terms of Service. If you do not agree with these terms, please stop using the service.
+
+</p>
+
+<h2>Use of the Service</h2>
+
+<p>
+
+OTC AI provides AI-powered conversations, automation, coding assistance, knowledge generation, translation and other intelligent features. The service is provided "as is" without guarantees of uninterrupted availability.
+
+</p>
+
+<h2>User Responsibilities</h2>
+
+<ul>
+
+<li>Use OTC AI responsibly.</li>
+
+<li>Do not use the service for illegal activities.</li>
+
+<li>Do not attempt to exploit vulnerabilities.</li>
+
+<li>Do not abuse or overload the service.</li>
+
+<li>You are responsible for any content you submit.</li>
+
+</ul>
+
+<h2>AI Responses</h2>
+
+<p>
+
+Artificial intelligence may occasionally produce inaccurate, incomplete or unexpected responses. Users should independently verify important information before relying on it.
+
+</p>
+
+<h2>Server Configuration</h2>
+
+<p>
+
+OTC AI supports different communities and servers.
+
+Every Discord server is unique, therefore the <strong>server owner or administrators are responsible for configuring the AI</strong> to match the needs, rules and style of their own community.
+
+OTC AI does not automatically customize itself for every server.
+
+</p>
+
+<h2>Language Support</h2>
+
+<p>
+
+OTC AI supports multiple languages.
+
+Users may communicate in their preferred language whenever available.
+
+Future updates may expand language support.
+
+</p>
+
+<h2>Availability</h2>
+
+<p>
+
+The service may be temporarily unavailable due to maintenance, updates or technical issues.
+
+Features may change without prior notice.
+
+</p>
+
+<h2>Privacy</h2>
+
+<p>
+
+Use of OTC AI is also governed by the Privacy Policy.
+
+By using the service you acknowledge that limited information may be processed in order to provide AI responses.
+
+</p>
+
+<h2>Limitation of Liability</h2>
+
+<p>
+
+OTC AI and its developers are not liable for damages resulting from use of the service, including indirect, incidental or consequential damages.
+
+</p>
+
+<h2>Termination</h2>
+
+<p>
+
+Access to OTC AI may be limited or terminated if these Terms are violated or if malicious activity is detected.
+
+</p>
+
+<h2>Changes</h2>
+
+<p>
+
+These Terms may be updated periodically.
+
+Continued use of OTC AI after changes means you accept the revised Terms.
+
+</p>
+
+<h2>Contact</h2>
+
+<p>
+
+Developer:<br>
+
+<strong>OTC AI</strong>
+
+<br><br>
+
+</p>
+
+</div>
+
+<footer>
+
+© 2026 OTC AI. All Rights Reserved.
+
+</footer>
+
+</div>
+
+</body>
+</html>
